@@ -1,8 +1,13 @@
-// Importo la funzione freeTime dal file test.js
-const freeTime = require ("./test");
+// Creo la funzione freeTime
+function freeTime (hobbyOne, hobbyTwo, hobbyThree) {
+    return [];
+};
 
-console.log(freeTime);
+console.log(freeTime (hobbyOne, hobbyTwo, hobbyThree));
 
 
-// Modo alternativo per importare la funzione freeTime
-// const {freeTime} = require (./test);
+// Esporto la funzione freeTime
+module.exports = freeTime;
+
+// Modo alternativo per esportare la funzione freeTime
+// module.exports = {freeTime};

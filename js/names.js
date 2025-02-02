@@ -6,6 +6,9 @@ function identity (firstName, lastName) {
     };
 };
 
+console.log(identity (firstName, lastName));
+
+
 // Esporto la funzione identity
 module.exports = identity;
 
