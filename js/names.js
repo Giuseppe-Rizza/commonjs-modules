@@ -1,16 +1,14 @@
-// Creo la funzione identity
-function identity (firstName, lastName) {
+// Creo la funzione fullName
+function fullName(firstName, lastName) {
     return {
-        firstName,
-        lastName
+        firstName: firstName,
+        lastName: lastName
     };
 };
 
-console.log(identity (firstName, lastName));
 
+// Esporto la funzione fullName
+module.exports = fullName;
 
-// Esporto la funzione identity
-module.exports = identity;
-
-// Modo alternativo per esportare la funzione identity
-// module.exports = {identity};
+// Modo alternativo per esportare la funzione fullName
+// module.exports = {fullName};

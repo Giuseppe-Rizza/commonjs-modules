@@ -1,13 +1,11 @@
-// Creo la funzione freeTime
-function freeTime (hobbyOne, hobbyTwo, hobbyThree) {
-    return [];
+// Creo la funzione hobbies
+function hobbies(hobbyOne, hobbyTwo, hobbyThree) {
+    return [hobbyOne, hobbyTwo, hobbyThree];
 };
 
-console.log(freeTime (hobbyOne, hobbyTwo, hobbyThree));
 
+// Esporto la funzione hobbies
+module.exports = hobbies;
 
-// Esporto la funzione freeTime
-module.exports = freeTime;
-
-// Modo alternativo per esportare la funzione freeTime
-// module.exports = {freeTime};
+// Modo alternativo per esportare la funzione hobbies
+// module.exports = {hobbies};
