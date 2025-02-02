@@ -16,14 +16,14 @@ const hobbies = require ("./hobbies");
 
 function namesHobbies() {
 
-    fullName(Giuseppe, Rizza)
+    fullName(Giuseppe, Rizza);
 
-    hobbies(viaggi, vino, cucina)
+    hobbies(viaggi, vino, cucina);
 
     return {
-        fullName,
-        hobbies
+        fullName: "fullName.firstName" + " " + "fullName.lastName",
+        hobbies: "hobbies.hobbyOne" + ", " + "hobbies.hobbyTwo" + ", " + "hobbies.hobbyThree"
     };
 };
 
-console.log(namesHobbies());
+console.log(namesHobbies(fullName, hobbies));
