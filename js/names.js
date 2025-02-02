@@ -1,8 +1,13 @@
-// Importo la funzione identity dal file test.js
-const identity = require ("./test");
+// Creo la funzione identity
+function identity (firstName, lastName) {
+    return {
+        firstName,
+        lastName
+    };
+};
 
-console.log(identity);
+// Esporto la funzione identity
+module.exports = identity;
 
-
-// Modo alternativo per importare la funzione identity
-// const {identity} = require (./test);
+// Modo alternativo per esportare la funzione identity
+// module.exports = {identity};
